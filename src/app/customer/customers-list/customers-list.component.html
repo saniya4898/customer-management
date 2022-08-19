@@ -1,0 +1,20 @@
+<div class="row m-2">
+    <div class=" col-5 card bg-light m-2" *ngFor="let customer of customers">
+        <div class="card-body">
+            <div class="row bg-warning text-white "> 
+                <span class="col d-flex align-items-center">{{customer.firstName + " "+ customer.lastName}}</span> 
+                <fa-icon [icon]="faTrash" (click)="deleteCustomer(customer)" class="btn text-danger col-2" ></fa-icon>
+            </div>
+            <div class="row">
+                <span>{{customer.city}}</span>
+                <a routerLink="customerorders/{{customer.id}}" routerLinkActive="active" *ngIf="customer.orders.length>0" >View {{customer.orders.length}} Orders</a>
+            </div>
+        </div>
+        
+</div>
+
+
+    <br/><br/>
+   
+</div>
+

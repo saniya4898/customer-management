@@ -1,0 +1,71 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Victor",
+      "lastName": "Bryn",
+      "city": "Seattle",
+      "orders": [
+        {
+          "product": "iPod",
+          "quantity": 1,
+          "unitPrice": 399.99
+        },
+        {
+          "product": "Speakers",
+          "quantity": 1,
+          "unitPrice": 499.99
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Lee",
+      "lastName": "Carroll",
+      "city": "Phoenix",
+      "orders": [
+        {
+          "product": "Basket",
+          "quantity": 1,
+          "unitPrice": 29.99
+        },
+        {
+          "product": "Needles",
+          "quantity": 2,
+          "unitPrice": 5.99
+        },
+        {
+          "product": "Yarn",
+          "quantity": 2,
+          "unitPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Saniya",
+      "lastName": "Karigar",
+      "city": "Pune",
+      "orders": [
+        {
+          "product": "USB",
+          "quantity": 2,
+          "unitPrice": 22.23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Saniya",
+      "lastName": "Karigar",
+      "city": "Pune",
+      "orders": [
+        {
+          "product": "USB",
+          "quantity": 2,
+          "unitPrice": 22.23
+        }
+      ]
+    }
+  ]
+}

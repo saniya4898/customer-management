@@ -1,0 +1,32 @@
+<h1 class="m-3">All Customer Orders</h1>
+<br/>
+<div *ngFor="let customer of customers" class="m-3" >
+    <div *ngIf="customer.orders.length > 0">
+        
+        <h3>{{customer.firstName + " "+ customer.lastName }}</h3>
+        <table class="table bg-light border" >
+            <thead class="bg-primary text-white " >
+                <th scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Total</th>
+            </thead>
+            <tbody  >
+                <tr *ngFor="let order of customer.orders">
+                    <td scope="row">{{order.product}}</td>
+                    <td>{{order.quantity}}</td>
+                    <td>${{order.unitPrice}}</td>
+                    <td>${{order.unitPrice *  order.quantity}} </td>
+                </tr>
+                <tr class="text-success">
+                    <td class="col-3"></td>
+                    <td class="col-3"></td>
+                    <td class="col-3"></td>
+                    <td class="col-3"><b>${{customer.orders | total}}</b> </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+        
+</div>
